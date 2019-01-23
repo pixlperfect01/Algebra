@@ -128,7 +128,12 @@ function s2(a, b, c, d){
     o8 = o6;
   }
   console.log(o7+o8);
-  document.getElementById("out").innerHTML=o7+o8;
+  var eee=o7+o8;
+  if(eee.indexOf("undefined")==-1){
+    document.getElementById("out").innerHTML=o7+o8;
+  }else{
+    document.getElementById("out").innerHTML="Not factorable!";
+  }
 }
 function find(arr, s){
   for(var jjjjjjjj=0;jjjjjjjj<arr.length;jjjjjjjj++){
