@@ -114,7 +114,7 @@ function s2(a, b, c, d){
   if(o5==o6){
     if(o3==""){
       if(o4==""){
-        
+      
       }else{
         o7 = o4;
       }
@@ -126,11 +126,11 @@ function s2(a, b, c, d){
       }
     }
     o8 = o6;
-  }
-  console.log(o7+o8);
-  var eee=o7+o8;
-  if(eee.indexOf("undefined")==-1){
-    document.getElementById("out").innerHTML=o7+o8;
+    console.log(o7+o8);
+    var eee=o7+o8;
+    if(eee.indexOf("undefined")==-1){
+      document.getElementById("out").innerHTML=o7+o8;
+    }
   }else{
     document.getElementById("out").innerHTML="Not factorable!";
   }
