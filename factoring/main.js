@@ -128,6 +128,7 @@ function s2(a, b, c, d){
     o8 = o6;
   }
   console.log(o7+o8);
+  document.getElementById("out").innerHTML=o7+o8;
 }
 function find(arr, s){
   for(var jjjjjjjj=0;jjjjjjjj<arr.length;jjjjjjjj++){
