@@ -11,8 +11,8 @@ function factor(){
 }
 function factorsOf(n){
   var out = [];
-  for(var i=0;i<=n;i++){
-    for(var j=0;j<=n;j++){
+  for(var i=-n;i<=n;i++){
+    for(var j=-n;j<=n;j++){
       if(i*j==n){
         out.push([i, j]);
       }
