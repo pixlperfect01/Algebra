@@ -29,18 +29,22 @@ function findF(a, b){
 }
 function s1(t1, t2, t3, t4){
   var record1 = 0;
-  for(var i=1;i<=Math.min(t1, t2);i++){
-    if(isInt(t1/i)&&isInt(t2/i)){
-      if(i>record1){
-        record1=i;
+  for(var i=-Math.min(t1, t2);i<=Math.min(t1, t2);i++){
+    if(i!==0){
+      if(isInt(t1/i)&&isInt(t2/i)){
+        if(i>record1){
+          record1=i;
+        }
       }
     }
   }
   var record2 = 0;
-  for(var i=1;i<=Math.min(t3, t4);i++){
-    if(isInt(t3/i)&&isInt(t4/i)){
-      if(i>record2){
-        record2=i;
+  for(var i=-Math.min(t3, t4);i<=Math.min(t3, t4);i++){
+    if(i!==0){
+      if(isInt(t3/i)&&isInt(t4/i)){
+        if(i>record2){
+          record2=i;
+        }
       }
     }
   }
